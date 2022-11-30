@@ -18,7 +18,7 @@ with st.form(key = '1div'):
 if submit:
     with st.expander("Results"):
         ans = [number1 / number2]
-        df = pd.Dataframe({'answer': ans})
+        df = pd.DataFrame({'answer': ans})
         st.dataframe(df)
     
     data = {
