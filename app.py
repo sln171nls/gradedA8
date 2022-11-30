@@ -26,7 +26,7 @@ if sumbit:
             'AMT': number1/number2
            }
     features = pd.DataFrame(data, index=[0])
-    return features
+    #return features
 
 df = user_input_features()
 st.subheader('Division Answer')
