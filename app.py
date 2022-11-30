@@ -14,7 +14,9 @@ with st.form(key = '1div'):
     with col3:
         st.text("Answer")
         submit =st.form_submit_button(label='Calculate')
-        
+st.write("""
+# RESULTS
+""")        
 if submit:
     with st.expander("Results"):
         ans = [number1 / number2]
