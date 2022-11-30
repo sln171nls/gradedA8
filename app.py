@@ -5,7 +5,7 @@ st.write("""
 # My Graded Assignment
 """)
 st.header('User Input Parameters')
-with st.form():
+with st.form(key = '1div'):
     col1,col2,col3 =st.beta_columns([3,2,1])
     with col1:
         number1 = st.number_input("NUMERATOR")
@@ -32,4 +32,4 @@ df = user_input_features()
 st.subheader('Division Answer')
 st.write(df.to_dict())
 
-st.write('The division is', number1 / number2)
+#st.write('The division is', number1 / number2)
