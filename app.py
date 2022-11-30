@@ -11,7 +11,8 @@ def user_input_features():
     
     data = {
             'AMT_NUMERATOR': number1,
-            'AMT_DENOMINATOR': number2
+            'AMT_DENOMINATOR': number2,
+            'AMT': number1/number2
            }
     features = pd.DataFrame(data, index=[0])
     return features
@@ -19,4 +20,3 @@ def user_input_features():
 df = user_input_features()
 st.subheader('Division Answer')
 st.write(df.to_dict())
-num3 = df.NAME_INCOME_TYPE.values
