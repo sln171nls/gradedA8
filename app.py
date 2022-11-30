@@ -14,7 +14,7 @@ def user_input_features():
             'AMT_DENOMINATOR': number2
            }
     features = pd.DataFrame(data, index=[0])
-    return features
+    '''return features'''
 
 df = user_input_features()
 
