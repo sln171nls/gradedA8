@@ -16,7 +16,7 @@ with st.form(key = '1div'):
         submit =st.form_submit_button(label='Calculate')
         
 if submit:
-    with st.beta_expander("Results"):
+    with st.expander("Results"):
         ans = number1 / number2
         df = pd.Dataframe({'answer': ans})
         st.dataframe(df)
