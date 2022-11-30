@@ -19,5 +19,5 @@ def user_input_features():
 df = user_input_features()
 
 st.subheader('Division Answer')
-st.write(number1)
+st.text(number1)
 #st.write(df.to_dict())
