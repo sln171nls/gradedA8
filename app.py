@@ -18,8 +18,9 @@ with st.form(key = '1div'):
 if submit:
     with st.expander("Results"):
         ans = [number1 / number2]
-        df = pd.DataFrame({'answer': ans})
-        st.dataframe(df)
+        st.write(ans)
+        #df = pd.DataFrame({'answer': ans})
+        #st.dataframe(df)
     
     #data = {
             #'AMT_NUMERATOR': number1,
