@@ -8,3 +8,15 @@ st.header('User Input Parameters')
 def user_input_features():
     number1 = st.number_input("AMT_NUMERATOR",min_value=2000000.0,max_value=2000000.0)
     number2 = st.number_input("AMT_DENOMINATOR",min_value=2000000.0,max_value=2000000.0)
+    
+    data = {
+            'AMT_NUMERATOR': amt_income_total,
+            'AMT_DENOMINATOR': name_income_type
+           }
+    features = pd.DataFrame(data, index=[0])
+    return features
+
+df = user_input_features()
+
+st.subheader('User Input parameters')
+st.write(df.to_dict())
