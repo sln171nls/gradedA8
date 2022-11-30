@@ -17,7 +17,7 @@ def user_input_features():
     #return features
 
 df = user_input_features()
-
+number3 = number1/number2
 st.subheader('Division Answer')
-st.text(number1)
+st.write(number3)
 #st.write(df.to_dict())
