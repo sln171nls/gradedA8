@@ -18,5 +18,5 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('User Input parameters')
+st.subheader('Division Answer')
 """st.write(df.to_dict())"""
