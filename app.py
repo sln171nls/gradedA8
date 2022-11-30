@@ -6,7 +6,7 @@ st.write("""
 """)
 st.header('User Input Parameters')
 with st.form(key = '1div'):
-    col1,col2,col3 =st.beta_columns([3,2,1])
+    col1,col2,col3 =st.columns([3,2,1])
     with col1:
         number1 = st.number_input("NUMERATOR")
     with col2:
@@ -19,6 +19,7 @@ if sumbit:
     with st.beta_expander("Results"):
         ans = number1 / number2
         df = pd.Dataframe({'answer': ans})
+        st.dataframe(df)
     
     data = {
             'AMT_NUMERATOR': number1,
