@@ -25,7 +25,7 @@ if submit:
             #'AMT_NUMERATOR': number1,
             #'AMT_DENOMINATOR': number2,
             #'AMT': number1/number2
-           }
+           #}
     #features = pd.DataFrame(data, index=[0])
     #return features
 
