@@ -18,7 +18,7 @@ st.write("""
 # RESULTS
 """)        
 if submit:
-    with st.expander("Results"):
+    with st.form(key = 'Results'):
         ans = (number1 / number2)
         st.write(" Answer ",ans)
         #df = pd.DataFrame({'answer': ans})
