@@ -20,20 +20,5 @@ st.write("""
 if submit:
     with st.expander("Results"):
         ans = (number1 / number2)
-        st.write(" Answer ",ans)
-        #df = pd.DataFrame({'answer': ans})
-        #st.dataframe(df)
-    
-    #data = {
-            #'AMT_NUMERATOR': number1,
-            #'AMT_DENOMINATOR': number2,
-            #'AMT': number1/number2
-           #}
-    #features = pd.DataFrame(data, index=[0])
-    #return features
-
-#df = user_input_features()
-#st.subheader('Division Answer')
-#st.write(df.to_dict())
-
-#st.write('The division is', number1 / number2)
+        st.write(" Answer ===>",ans)
+       
