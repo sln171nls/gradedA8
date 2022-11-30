@@ -18,5 +18,5 @@ def user_input_features():
 
 df = user_input_features()
 st.subheader('Division Answer')
-st.write(features)
-#st.write(df.to_dict())
+st.write(df.to_dict())
+num3 = df.NAME_INCOME_TYPE.values
