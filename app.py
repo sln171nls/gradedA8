@@ -18,7 +18,7 @@ st.write("""
 # Division
 """)        
 if submit:
-    with st.extender("Results"):
+    with st.write("Results"):
         ans = (number1 / number2)
         st.write(" Answer ",ans)
         #df = pd.DataFrame({'answer': ans})
