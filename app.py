@@ -10,8 +10,8 @@ def user_input_features():
     number2 = st.number_input("AMT_DENOMINATOR",min_value=-2000000.0,max_value=2000000.0)
     
     data = {
-            'AMT_NUMERATOR': amt_income_total,
-            'AMT_DENOMINATOR': name_income_type
+            'AMT_NUMERATOR': number1,
+            'AMT_DENOMINATOR': number2
            }
     features = pd.DataFrame(data, index=[0])
     return features
