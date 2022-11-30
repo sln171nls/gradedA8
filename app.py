@@ -5,9 +5,20 @@ st.write("""
 # My Graded Assignment
 """)
 st.header('User Input Parameters')
-def user_input_features():
-    number1 = st.number_input("AMT_NUMERATOR",min_value=-2000000.0,max_value=2000000.0)
-    number2 = st.number_input("AMT_DENOMINATOR",min_value=-2000000.0,max_value=2000000.0)
+with st.form():
+    col1,col2,col3 =st.beta_columns([3,2,1])
+    with col1:
+        number1 = st.number_input("NUMERATOR")
+    with col2:
+        number2 = st.number_input("DENOMINATOR")
+    with col3:
+        st.text("Answer")
+        submit =st.form_submit_button(label='Calculate')
+        
+if sumbit:
+    with st.beta_expander("Results"):
+        ans = number1 / number2
+        df = pd.Dataframe({'answer': ans})
     
     data = {
             'AMT_NUMERATOR': number1,
